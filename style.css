@@ -7,3 +7,5 @@
 /* The tilted decorative strip must not create horizontal page scrolling. */
 html,body{overflow-x:clip}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*{transition:none!important}}
+
+.contact-phone{font-size:24px;font-weight:600;letter-spacing:.3px;margin-top:22px}dialog .contact-phone{color:var(--ink);font-size:24px}

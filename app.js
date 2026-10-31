@@ -1,4 +1,5 @@
 const config = window.STUDIO_CONFIG || {};
+document.querySelectorAll('[data-studio-phone]').forEach(el => { el.textContent = config.phone || ''; });
 document.querySelectorAll('[data-studio-name]').forEach(el => { el.textContent = config.name || 'клякса'; });
 document.title = `${config.name || 'Клякса'} — детская художественная мастерская`;
 
