@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="Детская художественная мастерская: рисование под музыку для малышей, скетчинг для детей 7–14 лет и лепка на гончарном круге.">
+  <title>Клякса — детская художественная мастерская</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="./config.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="#home" aria-label="Клякса — на главную"><span class="brand-icon">✳</span><span data-studio-name>клякса</span><span class="brand-caption">детская художественная<br>мастерская</span></a>
+    <a class="header-link" href="#classes">Выбрать занятие <span>↗</span></a>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-dot"></span> МАЛЕНЬКИЕ РУКИ. БОЛЬШИЕ ИДЕИ.</p>
+        <h1>Здесь можно<br>быть <em>художником.</em></h1>
+        <p class="hero-description">Рисовать то, что слышишь. Замечать красоту в обычном. Превращать кусочек глины в маленькое чудо.</p>
+        <a class="button dark" href="#classes">Найти своё занятие <span>↓</span></a>
+        <p class="hero-note"><span class="scribble-arrow">↳</span> Начать можно с любопытства</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Иллюстрация: яркие геометрические формы, кисточка и карандаш">
+        <div class="art-grid"></div><div class="art-circle"></div><div class="art-arch"></div><div class="art-wave">≈</div><div class="art-flower">✳</div><div class="art-eye eye-one"></div><div class="art-eye eye-two"></div><div class="art-smile"></div>
+        <div class="pencil"><i></i></div><div class="brush"><i></i></div><span class="art-star">✧</span><span class="art-dot"></span>
+        <span class="art-label">у каждого свой почерк ♡</span><span class="art-sticker">можно<br>творить!</span>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div>ЦВЕТ • РИТМ • ВООБРАЖЕНИЕ <span>✳</span> НЕ ИДЕАЛЬНО, А ПО-СВОЕМУ <span>✳</span> ЛИНИИ • ФОРМЫ • ОТКРЫТИЯ <span>✳</span> ЦВЕТ • РИТМ • ВООБРАЖЕНИЕ</div></div>
+    <section class="classes wrap" id="classes" aria-labelledby="classes-title">
+      <div class="section-heading"><div><p class="eyebrow">ТРИ СПОСОБА ТВОРИТЬ</p><h2 id="classes-title">Что будем делать?</h2></div><p>Для тех, кто только пробует,<br>и тех, кто уже не выпускает карандаш.</p></div>
+      <div class="filters" role="group" aria-label="Фильтр занятий"><button class="filter active" data-filter="all" aria-pressed="true">Все занятия <span>3</span></button><button class="filter" data-filter="little" aria-pressed="false">Для малышей</button><button class="filter" data-filter="school" aria-pressed="false">7–14 лет</button><button class="filter" data-filter="clay" aria-pressed="false">Работа с глиной</button></div>
+      <div class="cards">
+        <article class="card" data-category="little">
+          <div class="card-art music-art" aria-hidden="true"><span class="number">01 / ЦВЕТ И ЗВУК</span><div class="music-shape"></div><span class="note note-one">♪</span><span class="note note-two">♫</span><div class="music-line"></div><span class="art-caption">как звучит жёлтый?</span></div>
+          <div class="card-body"><span class="tag">Для малышей</span><h3>Рисование <br>под музыку</h3><p>Слушаем мелодии и превращаем звуки в цвета, линии и пятна. Первое знакомство с искусством через игру.</p><button class="details-link" data-course="music">Об этом занятии <span>↗</span></button></div>
+        </article>
+        <article class="card" data-category="school">
+          <div class="card-art sketch-art" aria-hidden="true"><span class="number">02 / ЛИНИИ И ИДЕИ</span><div class="sketch-paper"><span class="sketch-vase"></span><span class="sketch-stem"></span><span class="sketch-flower">✳</span><span class="sketch-ground"></span></div><span class="sketch-pencil"></span><span class="art-caption">замечай. рисуй. повторяй.</span></div>
+          <div class="card-body"><span class="tag">7–14 лет</span><h3>Скетчинг <br>для детей</h3><p>Ловим впечатления в быстрых зарисовках. Учимся видеть форму, пробуем композицию и ищем свой стиль.</p><button class="details-link" data-course="sketch">Об этом занятии <span>↗</span></button></div>
+        </article>
+        <article class="card" data-category="clay">
+          <div class="card-art clay-art" aria-hidden="true"><span class="number">03 / ФОРМА И ФАКТУРА</span><span class="clay-spark">✧</span><div class="pot"><i></i></div><div class="wheel"></div><span class="clay-small">✳</span><span class="art-caption">чудо — своими руками</span></div>
+          <div class="card-body"><span class="tag">Знакомство с керамикой</span><h3>Лепка на <br>гончарном круге</h3><p>Чувствуем живую глину и наблюдаем, как она меняет форму. Знакомимся с гончарным кругом и создаём объём.</p><button class="details-link" data-course="clay">Об этом занятии <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+    <section class="approach wrap" aria-labelledby="approach-title"><div class="approach-mark" aria-hidden="true">✳</div><div><p class="eyebrow">ТВОРЧЕСТВО НАЧИНАЕТСЯ С «А ЧТО, ЕСЛИ…»</p><h2 id="approach-title">Не бояться чистого листа.</h2><p>Музыка помогает почувствовать цвет, скетчинг — внимательнее посмотреть вокруг, а глина — познакомиться с формой на ощупь. Выбирайте то, что интересно вашему ребёнку.</p></div></section>
+    <section class="faq wrap" aria-labelledby="faq-title"><div><p class="eyebrow">ДЛЯ РОДИТЕЛЕЙ</p><h2 id="faq-title">Перед знакомством</h2></div><div class="faq-list"><details><summary>Как выбрать занятие?<span>+</span></summary><p>Для малышей есть рисование под музыку. Для детей 7–14 лет — скетчинг. Если ребёнку нравится создавать объёмные вещи руками, присмотритесь к гончарному кругу. Подходящий возраст для лепки уточните у мастерской.</p></details><details><summary>Что взять с собой?<span>+</span></summary><p>Выберите удобную одежду, которую не страшно испачкать. Наличие материалов, фартуков и необходимость сменной обуви уточните перед посещением.</p></details><details><summary>Где узнать стоимость и расписание?<span>+</span></summary><p>Уточните у мастерской актуальные группы, стоимость, длительность занятия и свободные места. Контакт для связи доступен по кнопке ниже после настройки владельцем.</p></details></div></section>
+    <section class="contact wrap"><span class="contact-doodle" aria-hidden="true">☺</span><p class="eyebrow">ДАВАЙТЕ ЗНАКОМИТЬСЯ</p><h2>Большие открытия<br>начинаются с маленькой кляксы.</h2><button class="button dark contact-button">Связаться с мастерской <span>↗</span></button><p class="contact-note">Поможем выбрать направление и уточнить детали</p></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-icon">✳</span><span data-studio-name>клякса</span></a><p>Место для маленьких творческих открытий</p><a href="#classes">К занятиям ↑</a></footer>
+  <dialog id="course-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Закрыть">×</button><span class="tag" id="dialog-tag"></span><h2 id="dialog-title"></h2><p id="dialog-description"></p><h3>Что попробуем</h3><ul id="dialog-list"></ul><div class="dialog-note">Стоимость, расписание и условия посещения уточняйте у мастерской.</div><button class="button dark" id="course-contact">Узнать о занятии <span>↗</span></button></dialog>
+  <dialog id="contact-dialog" aria-labelledby="contact-title"><button class="close-dialog" aria-label="Закрыть">×</button><p class="eyebrow">СВЯЗЬ С МАСТЕРСКОЙ</p><h2 id="contact-title">Скоро познакомимся!</h2><p>Контакт мастерской пока не добавлен. Вернитесь чуть позже — здесь появится ссылка для связи и уточнения расписания.</p><button class="button dark close-contact">Понятно</button></dialog>
+</body>
+</html>
